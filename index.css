@@ -1,0 +1,239 @@
+@media (max-width: 655px) {
+  html body main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  html body main .salama_left {
+    background: white;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html body main .salama_left .buttons {
+    display: none;
+  }
+  html body main .salama_left #icon_menu {
+    display: block;
+  }
+  html body .salama_right {
+    background: rgb(242, 240, 240);
+    height: 120vh;
+  }
+  html body .salama_right header {
+    display: none;
+  }
+  html body .salama_right .titre {
+    display: none;
+  }
+  html body .salama_right .all_identite {
+    display: grid;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(242, 240, 240);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+}
+
+.salama_left {
+  background: rgb(31, 100, 79);
+  height: 120vh;
+}
+.salama_left header {
+  background-color: yellow;
+  top: 0;
+  height: 60px;
+  width: 100%;
+}
+.salama_left .titre {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  border: 1px solid yellow;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  background: rgb(31, 100, 79);
+}
+.salama_left .titre .img_logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px;
+}
+.salama_left .titre h1 {
+  color: white;
+}
+.salama_left .titre h1 span {
+  color: yellow;
+}
+.salama_left .buttons {
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+}
+.salama_left .buttons .monprofil, .salama_left .buttons .dashboard {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0px 3px 0px 0px yellow;
+  border-radius: 5px;
+  background: rgb(31, 100, 79);
+  color: white;
+}
+.salama_left .buttons .monprofil:hover, .salama_left .buttons .dashboard:hover {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: yellow;
+  border: yellow;
+  border-radius: 5px;
+  color: rgb(31, 100, 79);
+}
+
+.salama_right {
+  background: rgb(242, 240, 240);
+  height: 120vh;
+}
+.salama_right header nav {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.salama_right header nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.salama_right .titre {
+  background: rgb(202, 232, 244);
+}
+.salama_right .titre h2 {
+  margin: 10px;
+  padding: 5px;
+}
+.salama_right .all_identite {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.salama_right .all_identite .photo_name {
+  text-align: center;
+  margin: 15px;
+}
+.salama_right .all_identite .photo_name img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.salama_right .all_identite .photo_name #type_de_voiture {
+  color: gray;
+  text-align: center;
+}
+
+.tous_document {
+  background-color: rgba(156, 167, 174, 0.515);
+  width: 400px;
+  height: 70px;
+  margin: 15px;
+  border-radius: 5px;
+}
+.tous_document p {
+  margin-top: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+.tous_document nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+.tous_document nav button {
+  border: none;
+}
+.tous_document nav button:hover {
+  background-color: rgba(108, 164, 162, 0.794);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.511);
+}
+
+.doc_name {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin: 15px;
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.259);
+}
+.doc_name img {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 20px;
+}
+.doc_name #valide_doc {
+  color: green;
+}
+.doc_name #invalid_doc {
+  color: red;
+}
+
+#icon_menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  right: 4%;
+  background: rgb(31, 100, 79);
+  display: grid;
+  width: 200px;
+  transition: 1s;
+}
+.menu button {
+  width: 80%;
+  margin: 10px auto;
+}
+.menu .monprofil_menu, .menu .dashboard_menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0px 3px 0px 0px yellow;
+  border-radius: 5px;
+  background: rgb(31, 100, 79);
+  color: white;
+}
+.menu .monprofil_menu:hover, .menu .dashboard_menu:hover {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: yellow;
+  border: yellow;
+  border-radius: 5px;
+  color: rgb(31, 100, 79);
+}
+
+.menuone {
+  position: absolute;
+  margin-left: -400px;
+}/*# sourceMappingURL=index.css.map */

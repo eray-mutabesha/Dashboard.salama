@@ -1,0 +1,41 @@
+@media (max-width:655px){
+    html{
+        body{
+            main{
+                display: grid;
+                grid-template-columns: auto;
+                .salama_left{
+                    background:white;
+                    height:fit-content;
+                    .buttons{
+                        display: none;
+                    }
+                    #icon_menu{
+                        display: block;
+                    }
+                }
+            }
+            // ----------------------------------part two-------------------------------
+            .salama_right{
+                background:rgb(242, 240, 240);
+                height:120vh;
+                
+                header{
+                    display: none;
+                    }
+                    .titre{
+                        display: none;
+                        
+                    }
+                    .all_identite{
+                        display: grid;
+                    }
+            }
+            
+            
+        }
+        
+    }
+    
+    
+}
